@@ -1,23 +1,29 @@
-package org.kamran.model;
+package org.kamran.data;
 
-public class User {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
 
+@Entity
+public class UserEntity implements Serializable {
+
+    @Id
     private String firstName;
     private String lastName;
     private int membershipId;
     private String creationTime;
 
-    public User(){
+    public UserEntity(){
     }
 
-    public User(String firstName, String lastName, int membershipId, String creationTime) {
+    public UserEntity(String firstName, String lastName, int membershipId, String creationTime) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.membershipId = membershipId;
         this.creationTime = creationTime;
     }
 
-    public User(String firstName, String lastName, int membershipId) {
+    public UserEntity(String firstName, String lastName, int membershipId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.membershipId = membershipId;

@@ -3,7 +3,7 @@
 ### Post endpoint
 ```
 curl --request POST \
---url http://localhost:8090/addUser \
+--url http://localhost:8080/addUser \
 --header 'Content-Type: application/json' \
 --data '{
 "firstName": "Daniel",
@@ -16,7 +16,7 @@ curl --request POST \
 
 ```
 curl --request GET \
---url http://localhost:8090/getuser/Daniel
+--url http://localhost:8080/getuser/Daniel
 ```
 
 ### Delete endpoint
