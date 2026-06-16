@@ -1,0 +1,6 @@
+api:
+  endpoint: "https://timeapi.io/api/v1/time/current/zone?timezone="
+  continent: "Europe/London"
+
+server:
+  port: 8080
